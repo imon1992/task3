@@ -1,0 +1,276 @@
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial, Helvetice, sens-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
+	background: url(images/bg.jpg)
+}
+
+.content_center {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.global-box{
+	background-color: #fff;
+	width: 1170px;
+	margin: 100px auto 120px auto;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+.header-left{
+	float: left;
+	width: 25%;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    padding-left: 30px;
+}
+
+.header-right{
+	float: right;
+	width: 75%;
+	text-align: right;
+    margin-top: 35px;
+}
+
+.global-menu{
+	list-style: none;
+
+}
+.global-menu li{
+		display: inline-block;
+		margin-right: 25px;
+		
+}
+.global-menu{
+
+}
+.global-menu a{
+		color: rgb(121,121,121);
+		text-decoration: none;
+}
+.active a{
+	color: rgb(197, 232, 241);
+}
+
+.global-menu li:after{
+	content: "|";
+	padding-left: 25px;
+	display: inline-block;
+	
+}
+.global-menu li:last-child:after{
+	content: none;
+}
+/*new block*/
+.table-thee-columns{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	background: #6DC5DD
+}
+.table-thee-columns > div{
+	display: table-row;
+}
+.table-thee-columns > div > div{
+	display: table-cell;
+}
+
+
+
+.news-text-box h2{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.news-text-box p{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.read-more-link{
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+    margin-bottom: 60px;
+}
+.news-text-box{
+    float: right;
+    width: 70%;
+    margin-top: 60px;
+    margin-left: 25px;
+    margin-bottom: 60px;
+}
+.sprite-pic{
+    float: left;
+    margin-top: 60px;
+    margin-left: 25px;
+	width: 63px;
+	height: 63px;
+	background: url(images/col_pic_slider.png) no-repeat;
+}
+
+.sprite-flag{
+	background-position: 0 0;
+
+}
+.sprite-photo{
+	background-position: -63px 0; /* - потому что сдвигаем в обратную сторону*/
+}
+.sprite-dom{
+	background-position: -126px 0 ;
+}
+
+/*phone-and-text*/
+
+.phone-text{
+    background-color: rgb(238,238,238);
+}
+.phone{
+    float: left;
+    width: 45%;
+    display: inline-block;
+    padding-left: 100px;
+}
+.text-near-phone{
+    float: left;
+    width: 55%;
+    display: inline-block;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.lorem-ipsum-text{
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(0,61,72);
+}
+.text-near-phone h1{
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    color: rgb(0,61,72);
+}
+
+.morbi-in-sem-text{
+    color: rgb(139,139,139);
+}
+
+.more-info{
+    background: rgb(247,116,98);
+    color: #fff;
+    width: 130px;
+    height: 45px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/*news and comment*/
+/*news*/
+.news{
+    float: left;
+    width: 75%;
+    margin-bottom: 65px;
+}
+
+.comment{
+
+}
+.news-photo{
+    float: left;
+    width: 25%;
+display: inline-block;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+.news-text{
+    float: left;
+    width: 70%;
+    display: inline-block;
+    padding-top: 60px;
+    padding-left: 30px ;
+}
+.news-text h2{
+    margin-top: 0;
+    color: rgb(0,61,72);
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+}
+.news-text p{
+    margin-top: 25px;
+    color: rgb(139,139,139);
+}
+
+.more{
+    margin-top: 30px;
+    background: rgb(247,116,98);
+    color: #fff;
+    width: 70px;
+    height: 40px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/*comment*/
+.comment-text,.comment-author{
+    margin-left: 30px;
+
+}
+.comment-text{
+    color: rgb(139,139,139);
+}
+.comment-author{
+    color: rgb(244,148,135);
+    margin-bottom: 35px;
+}
+.comment{
+    background-color: rgb(238,238,238);
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    width: 22%;
+}
+
+.comments{
+    padding-top: 60px;
+}
+
+/*footer*/
+.footer{
+    background-color: rgb(247,116,98);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 250px;
+    padding-left: 250px;
+    text-align: center;
+}
+
+.footer h2,.footer p{
+    color: #fff;
+}
